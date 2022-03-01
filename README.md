@@ -20,7 +20,7 @@ The template project comes with both Maven and Gradle build scripts. To run the 
 
     mvn clean verify
 	
-	NOTE: If you get following error - Fatal error compiling: error: invalid target release: 17 -> [Help 1]
+	NOTE: If you get following error - Fatal error compiling: error: invalid target release: 16 -> [Help 1]
 	The Maven may be using a different Java version to compile the project, and you can use mvn -version to find out the Maven details.
 	Update the pom.xml section for maven-compiler-plugin and set the correct version as per your Maven details.
 
