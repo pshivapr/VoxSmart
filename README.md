@@ -8,18 +8,25 @@ Click on the [Use This Link](https://github.com/pshivapr/VoxSmart.git) create a 
 
 Or simply [download a zip](https://github.com/pshivapr/VoxSmart/archive/master.zip) file.
 
+## Use Gradle
+
+For gradle, use a command window and run:
+
+    gradlew test
+
 ## Running the tests under Maven
 
 The template project comes with both Maven and Gradle build scripts. To run the tests with Maven, open a command window and run:
 
     mvn clean verify
+	
+	NOTE: If you get following error - Fatal error compiling: error: invalid target release: 17 -> [Help 1]
+	The Maven may be using a different Java version to compile the project, and you can use mvn -version to find out the Maven details.
+	Update the pom.xml section for maven-compiler-plugin and set the correct version as per your Maven details.
 
-## Use Gradle
+## Tests
 
-For gradle, use a command window and run:
-
-    gradlew test (on Windows)
-	gradle test (on Mac)
+There are runners for both Junit and Cucumber, you only need one you can comment the other file. Both run same tests. 
 
 ## Viewing the reports
 
